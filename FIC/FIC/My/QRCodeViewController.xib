@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRCodeViewController">
+            <connections>
+                <outlet property="button" destination="wdZ-Rv-gR9" id="2T8-CA-K6f"/>
+                <outlet property="codeimageView" destination="v8B-RE-ipF" id="o8c-kJ-CqC"/>
+                <outlet property="contentLbl" destination="PST-im-Pfo" id="6Di-3q-q9B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v8B-RE-ipF">
+                    <rect key="frame" x="87.5" y="70" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="kry-DK-XlT"/>
+                        <constraint firstAttribute="height" constant="200" id="q3R-wF-2J9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PST-im-Pfo">
+                    <rect key="frame" x="16" y="290" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="SXa-fn-zyV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdZ-Rv-gR9">
+                    <rect key="frame" x="16" y="341" width="343" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="TTM-d6-iPV"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="copyAction:" destination="-1" eventType="touchUpInside" id="nIb-O8-xEr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wdZ-Rv-gR9" firstAttribute="top" secondItem="PST-im-Pfo" secondAttribute="bottom" constant="30" id="5dl-Cm-QUK"/>
+                <constraint firstItem="v8B-RE-ipF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="9h1-l2-Pk5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wdZ-Rv-gR9" secondAttribute="trailing" constant="16" id="AvS-Xn-5IA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PST-im-Pfo" secondAttribute="trailing" constant="16" id="Cjq-nr-M5V"/>
+                <constraint firstItem="wdZ-Rv-gR9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="EIP-BG-LAX"/>
+                <constraint firstItem="PST-im-Pfo" firstAttribute="top" secondItem="v8B-RE-ipF" secondAttribute="bottom" constant="20" id="J7y-Gc-bzD"/>
+                <constraint firstItem="PST-im-Pfo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="JRz-GA-iPQ"/>
+                <constraint firstItem="v8B-RE-ipF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qEt-8g-ySm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

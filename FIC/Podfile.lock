@@ -1,0 +1,66 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - IQKeyboardManager (6.2.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SGQRCode (3.0.0)
+  - TZImagePickerController (3.1.2)
+  - ZWPullMenuView (0.0.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - FMDB
+  - IQKeyboardManager
+  - Masonry
+  - MBProgressHUD (~> 0.9.2)
+  - SDWebImage (~> 4.0.0)
+  - SGQRCode (~> 3.0)
+  - TZImagePickerController
+  - ZWPullMenuView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FMDB
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - SDWebImage
+    - SGQRCode
+    - TZImagePickerController
+    - ZWPullMenuView
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SGQRCode: f0e40945b5bb087af1caf8ae33c96115a676dbbd
+  TZImagePickerController: 29b279caee3309cbaa04ef1384b036ec90297f3f
+  ZWPullMenuView: 77ab6d7af84f947ef2bb515a012a7ed14a96a230
+
+PODFILE CHECKSUM: c3038833f9b5bc22ef6c5c4f5e9f19960c4b5ad9
+
+COCOAPODS: 1.5.3

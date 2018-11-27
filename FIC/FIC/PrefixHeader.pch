@@ -1,0 +1,87 @@
+//
+//  PrefixHeader.pch
+//  FIC
+//
+//  Created by fic on 2018/10/24.
+//  Copyright © 2018年 fic. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIBarButtonItem+Extension.h"
+#import "UIView+Extension.h"
+#import "UIColor+HexStringColor.h"
+
+#define WhiteColor [UIColor colorWithHexString:@"#ffffff"] //白色
+#define BlackColor [UIColor colorWithHexString:@"#000000"] //黑色
+#define DefaultBgColor [UIColor colorWithHexString:@"#f8f8f8"] // 统一的控制器背景色(table的背景色) 灰色
+
+#define TabbarNormalColor [UIColor colorWithHexString:@"#ffffff"] //底部tabar文字正常颜色
+#define TabbarSelectColor [UIColor colorWithHexString:@"#ED3D3D"] //底部tabar文字选中颜色
+
+#define TextBlack [UIColor colorWithHexString:@"#222222"] //文字 黑色
+#define TextMidGray [UIColor colorWithHexString:@"#888888"] //文字 灰色
+#define TextGray [UIColor colorWithHexString:@"#aaaaaa"] //文字 弱化灰色
+#define TextRed [UIColor colorWithHexString:@"#ED3D3D"] //文字 红色
+#define TextYellow [UIColor colorWithHexString:@"#FFA336"] //文字 橙黄
+
+#define ButtonBg_red [UIColor colorWithHexString:@"#ED3D3D"] //button 背景色 红色
+#define ButtonBg_gray [UIColor colorWithHexString:@"#DDDDDD"] //button 背景色 灰色
+#define ButtonCorner 5.0 //button 默认的圆角
+#define ButtonTextWhite [UIColor colorWithHexString:@"#ffffff"] //button 文字颜色 白色
+
+#define FontMax [UIFont systemFontOfSize:22]//最大号文字
+#define FontBig [UIFont systemFontOfSize:18]//大号文字
+#define FontDefault [UIFont systemFontOfSize:16]//默认文字大小
+#define FontSmall [UIFont systemFontOfSize:14]//文字小号
+#define FontSmallest [UIFont systemFontOfSize:12]//最小的文字
+#define FontNameBold @"Helvetica-Bold"//粗体字
+
+#define ProgressBgGray [UIColor colorWithHexString:@"#f2f2f2"]//进度条默认的灰色
+#define ProgressBgRed [UIColor colorWithHexString:@"#ED3D3D"]//进度条红色
+#define ProgressHeight 8.0 //进度条高度
+
+#define ViewBgRed [UIColor colorWithHexString:@"#ED3D3D"]//view 背景色 红色
+#define ViewCorner 5.0 //view 默认的圆角
+
+#define ShadowOpacity 0.15 //阴影透明度
+#define BorderWidth 0.5 //边线宽度
+
+#define Head @"head"
+#define DefaultCellHeight 44
+#define HudDuration 0.75
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define DefaultMargin 16
+#define CellSeparatorLine  UIEdgeInsetsMake(0, 16, 0, 16) //cell分割线
+
+#define DefaultButtonColor [UIColor colorWithRed:64/255.0f green:204/255.0f blue:130/255.0f alpha:1]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define HBRGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define HBRandomColor HBRGB(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256)) //随机色
+
+#define RGBCOLOR_HEX(hexColor) [UIColor colorWithRed: (((hexColor >> 16) & 0xFF))/255.0f         \
+green: (((hexColor >> 8) & 0xFF))/255.0f          \
+blue: ((hexColor & 0xFF))/255.0f                 \
+alpha: 1]
+#define GRAYTEXTCOLOR RGBCOLOR_HEX(0x7b7b7b)
+#define ButtonNormalColor RGBCOLOR_HEX(0x67d2ca)
+static NSString *message = @"msg";
+//FIC 对人民币  1FIC = 1元
+#define DefaultPercent 0.05
+
+#define DefaultFontSize 16
+#define WeakSelf(type) __weak __typeof__(type) weakSelf = type;
+#define StrongSelf(type) __strong __typeof__(type) strongSelf = type;
+
+#ifdef DEBUG // 处于开发阶段
+#define HBLog(...) NSLog(__VA_ARGS__)
+#else // 出去发布阶段
+#define HBLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */

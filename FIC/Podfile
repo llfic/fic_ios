@@ -1,0 +1,15 @@
+platform :ios, '9.0'
+target 'FIC' do
+pod 'MBProgressHUD', '~> 0.9.2'
+pod 'SDWebImage', '~> 4.0.0'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'IQKeyboardManager'
+pod 'Masonry'
+pod 'FMDB'
+pod 'ZWPullMenuView'
+pod 'SGQRCode', '~> 3.0'
+pod 'TZImagePickerController'
+#pod 'NHBarScrollTool', :path=> '../NHBarScrollTool.podspec'
+inhibit_all_warnings!
+end
+
