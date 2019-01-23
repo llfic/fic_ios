@@ -467,7 +467,6 @@ body {
 }
 .navbar-default .navbar-header .navbar-brand.navbar-brand-custom {
   width: 50px;
-  background: url('../../img/logo.svg') no-repeat center;
   background-size: contain;
   margin-left: 15px;
 }
@@ -574,7 +573,6 @@ body {
   }
   .navbar-default .navbar-header .navbar-brand.navbar-brand-custom {
     margin-left: 0;
-    background: url('../../img/logo.svg') no-repeat center;
     background-size: contain;
   }
   .navbar-default .nav > li > a,
@@ -594,7 +592,6 @@ body {
     box-shadow: 0 0 1px #808080;
   }
   .navbar-default.affix.navbar-light .navbar-brand-custom {
-    background: url('../../img/logo-dark.svg') no-repeat center;
     background-size: contain;
   }
   .navbar-default.affix.navbar-light .navbar-nav > li.dropdown span.custom-caret {
