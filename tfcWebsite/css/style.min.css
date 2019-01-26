@@ -420,7 +420,7 @@ background:0 0
 }
 .navbar-default .navbar-header .navbar-brand.navbar-brand-custom {
 	width: 50px;
-	background: url(../../img/logo.svg) center no-repeat;
+	background: url('../../img/people/logo.png') no-repeat center;
 	background-size: contain;
 	margin-left: 15px
 }
@@ -519,7 +519,7 @@ header.devices-on-right .container>.row>div, header.video-on-right .container>.r
 }
 .navbar-default .navbar-header .navbar-brand.navbar-brand-custom {
 	margin-left: 0;
-	background: url(../../img/logo.svg) center no-repeat;
+	background: url('../../people/logo.png') no-repeat center;
 	background-size: contain
 }
 .navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
@@ -534,7 +534,7 @@ header.devices-on-right .container>.row>div, header.video-on-right .container>.r
 	box-shadow: 0 0 1px grey
 }
 .navbar-default.affix.navbar-light .navbar-brand-custom {
-	background: url(../../img/logo-dark.svg) center no-repeat;
+	background: url('../../img/people/logo.png') no-repeat center;
 	background-size: contain
 }
 .navbar-default.affix.navbar-light .navbar-nav>li.dropdown span.custom-caret {
